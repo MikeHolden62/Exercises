@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Functions 1</title>
+</head>
+
+<body>
+
+    <p></p>
+
+    <script>
+
+        let string = prompt("Enter the string");
+        string = toLeadingCap(string);
+        let last = lastLetter(string);
+
+        alert("String is: " + string);
+        alert("Last letter is: " + last);
+
+        function toLeadingCap(str) {
+            lc_str = str.toLowerCase();
+            uc_str = str.toUpperCase();
+            rt_str = uc_str[0] + lc_str.slice(1);
+            return rt_str;
+        }
+
+        function lastLetter(str) {
+            let len = str.length;
+            return str.slice(len - 1, len);
+        }
+
+    </script>
+    
+
+</body>
+
+</html>

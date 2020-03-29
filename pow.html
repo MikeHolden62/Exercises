@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Functions 1</title>
+</head>
+
+<body>
+
+    <p></p>
+
+    <script>
+
+        let snum = prompt("Enter the base number");
+        let sindex = prompt("Enter index");
+
+        let num = Number(snum);
+        let index = Number(sindex);
+
+        let result = pow(num, index);
+
+        alert("Result is " + result);
+
+        function pow(num, index) {
+
+
+            let i = 0;
+            let out = 1;
+
+            for (i = 1; i <= index; i++) {
+                out = out * num;
+            }
+
+            return out;
+
+        }
+
+    </script>
+
+</body>
+
+</html>

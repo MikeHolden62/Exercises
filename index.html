@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Functions 1</title>
+</head>
+
+<body>
+
+    <p></p>
+
+    <script>
+
+        let age = prompt("How old are you?");
+
+        let ok = checkAge_o(age);
+
+        if (ok) {
+            alert("You are ok");
+        } else {
+            alert("Sorry, you are too young");
+        }
+
+        function checkAge(age) {
+            if (age > 18) {
+                return true;
+            } else {
+                return confirm('Did parents allow you?')
+            }
+        }
+
+        function checkAge_q(age) {
+
+            return (age > 18) ? true : confirm('Did parents allow you?');
+        }
+
+
+        function checkAge_o(age) {
+
+            return (age > 18) || confirm('Did parents allow you?');
+        }
+
+    </script>
+
+</body>
+
+</html>
